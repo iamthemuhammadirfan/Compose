@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.compose"
+    namespace = "com.compose"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.compose"
+        applicationId = "com.compose"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -58,6 +58,5 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
 //    Implementing the Navigation Feature
-    val nav_version = "2.8.4"
-    implementation("androidx.navigation:navigation-compose:$nav_version")
+    implementation(libs.androidx.navigation.compose)
 }

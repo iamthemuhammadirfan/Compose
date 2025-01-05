@@ -109,6 +109,7 @@ fun ProjectCard(project: Project, modifier: Modifier = Modifier) {
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun BasicComposeScreen(navController: NavController) {
     Scaffold(
